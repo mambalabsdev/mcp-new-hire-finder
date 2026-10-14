@@ -1,0 +1,50 @@
+{
+  "name": "@mambalabsdev/mcp-new-hire-finder",
+  "version": "1.0.0",
+  "description": "MCP server for New Hire Finder. Find the people who started a role at a company in the last few months. Give a company domain, the titles you sell to, and a lookback window. Get one flat row per person: name, profile URL, title, start month, prior role, move type (new hire or internal promotion), and the source that found them. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-new-hire-finder": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "new-hire",
+    "recent-hires",
+    "job-change",
+    "sales-trigger",
+    "apify",
+    "clay",
+    "lead-generation"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/new-hire-finder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-new-hire-finder"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-new-hire-finder"
+}

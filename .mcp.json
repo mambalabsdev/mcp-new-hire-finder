@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-new-hire-finder": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-new-hire-finder"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
