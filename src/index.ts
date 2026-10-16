@@ -203,10 +203,10 @@ server.registerTool(
   {
     title: "Find new hires",
     description:
-      "Find people who started a role matching your titles at a company inside a lookback window. Give company_domain (or company_domains), target_titles, and lookback_months. Returns one flat, Clay-ready JSON row per person with name, profile URL, title, start month, prior role, move type (new hire, internal promotion, or announcement only), and source, plus one summary row per company that says whether anyone was found or why nothing could be looked up. Runs on your own Prospeo, Serper, SerpApi, or Exa keys passed as inputs, and on a people list you send; it never fetches LinkedIn and holds no key of its own. A run that does not succeed is returned as an error with its run ID. Read-only; requires an APIFY_TOKEN and consumes Apify credits per call.",
+      "Find people who started a role matching your titles at a company inside a lookback window. Give company_domain (or company_domains), target_titles, and lookback_months. Returns one flat, Clay-ready JSON row per person with name, profile URL, title, start month, prior role, move type (new hire, internal promotion, or announcement only), and source, plus one summary row per company that says whether anyone was found or why nothing could be looked up. Runs on your own Prospeo, Serper, SerpApi, or Exa keys passed as inputs, and on a people list you send; it never fetches LinkedIn and holds no key of its own. A run that does not succeed is returned as an error with its run ID. Reads public data and writes nothing; requires an APIFY_TOKEN and consumes Apify credits per call.",
     annotations: {
       title: "Find new hires",
-      readOnlyHint: true,
+      readOnlyHint: false,
       destructiveHint: false,
       idempotentHint: true,
       openWorldHint: true,

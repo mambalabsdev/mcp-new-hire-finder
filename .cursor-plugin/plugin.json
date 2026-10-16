@@ -1,7 +1,7 @@
 {
   "name": "mcp-new-hire-finder",
   "displayName": "New Hire Finder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for New Hire Finder. Find the people who started a role at a company in the last few months. Give a company domain, the titles you sell to, and a lookback window. Get one flat row per person: name, profile URL, title, start month, prior role, move type (new hire or internal promotion), and the source that found them. Runs on Apify. Clay-ready output.",
   "author": {
     "name": "Mamba Labs",
